@@ -1,5 +1,5 @@
 fileFormatVersion: 2
-guid: a4347240c4f3ba3449018bd555245827
+guid: cbc2eb89f6456a64a8c354bafeb24405
 TextureImporter:
   internalIDToNameTable:
   - first:
@@ -144,7 +144,7 @@ TextureImporter:
   spriteMeshType: 1
   alignment: 0
   spritePivot: {x: 0.5, y: 0.5}
-  spritePixelsToUnits: 128
+  spritePixelsToUnits: 100
   spriteBorder: {x: 0, y: 0, z: 0, w: 0}
   spriteGenerateFallbackPhysicsShape: 1
   alphaUsage: 1
@@ -909,39 +909,7 @@ TextureImporter:
     secondaryTextures: []
     spriteCustomMetadata:
       entries: []
-    nameFileIdTable:
-      Escenario_0: -8410340717578628922
-      Escenario_1: -2287387070785329457
-      Escenario_10: 4643421963486823984
-      Escenario_11: -1233528983760812060
-      Escenario_12: -8584911087311798788
-      Escenario_13: -8940255133169566449
-      Escenario_14: 4275274898883850306
-      Escenario_15: 6602838493669282703
-      Escenario_16: -4691810022233071688
-      Escenario_17: -5265398680124056645
-      Escenario_18: 8447898727005528767
-      Escenario_19: 359725743860725565
-      Escenario_2: 2691942787279535779
-      Escenario_20: -7321964696045563916
-      Escenario_21: 5043737963970411464
-      Escenario_22: -6962844843336034594
-      Escenario_23: 1229830429139090275
-      Escenario_24: 8935165527565601227
-      Escenario_25: -6408628257290411257
-      Escenario_26: 88651500736351046
-      Escenario_27: -7194268518823485604
-      Escenario_28: -6096896591228245715
-      Escenario_29: 896008612970631893
-      Escenario_3: -1305353396912659229
-      Escenario_30: 6910862420761325871
-      Escenario_31: 3044963585815236109
-      Escenario_4: -3704217290752878392
-      Escenario_5: 9173851097897114584
-      Escenario_6: -7535306028114284534
-      Escenario_7: 8925360836147461087
-      Escenario_8: 1963852556468867804
-      Escenario_9: 1151814357055333420
+    nameFileIdTable: {}
   mipmapLimitGroupName: 
   pSDRemoveMatte: 0
   userData: 
