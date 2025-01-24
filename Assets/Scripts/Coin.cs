@@ -4,13 +4,11 @@ using UnityEngine;
 public class Coin : MonoBehaviour
 {
     public static Action<int> OnSetPointText;
-
-    [SerializeField]
-    private int points;
+    public int Points;
 
     void Start()
     {
-        PlayerCollision.OnGetCoin += SendToPointText;
+        
     }
 
 
@@ -19,9 +17,12 @@ public class Coin : MonoBehaviour
         
     }
 
-    private void SendToPointText()
+    private void OnTriggerEnter2D(Collider2D collision)
     {
-        OnSetPointText?.Invoke(points);
-        Destroy(gameObject);
+        if (collision.gameObject.tag == "Player")
+        {
+            OnSetPointText?.Invoke(Points);
+            Destroy(gameObject);
+        }
     }
 }
