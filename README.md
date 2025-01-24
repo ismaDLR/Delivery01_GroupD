@@ -14,10 +14,10 @@ This project is made by 4 students, and the goal is to develop a simple 2D platf
 
 ### Controls
 
-Keyboard: WASD and Arrow Keys for player movement
-Keyboard: SPACE for player jump
-Keyboard: ENTER to start/restart game
-Keyboard: ESCAPE to exit game and close program
+- Keyboard: WASD and Arrow Keys for player movement
+- Keyboard: SPACE for player jump
+- Keyboard: ENTER to start/restart game
+- Keyboard: ESCAPE to exit game and close program
 
 ### Screenshots
 
