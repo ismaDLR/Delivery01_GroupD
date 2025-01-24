@@ -41,5 +41,6 @@ _TODO: Show your game to the world, animated GIFs recommended!._
 This game sources are licensed under MIT license. Check [LICENSE](LICENSE) for further details.
 
 Licenses of the sprites used
+From Kenney https://www.kenney.nl/assets
 
 *Copyright (c) $(Year) $(Developers Names)*
