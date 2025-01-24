@@ -1,6 +1,6 @@
-## Delivery 01 - Jump Boy
+## Delivery 01 - Carlos el explorador
 
-![$(Game Title)](Screenshots/screenshot01.png "$(Game Title)")
+![$(Carlos el explorador)](Screenshots/screenshot01.png "$(Carlos el explorador)")
 
 ### Description
 
