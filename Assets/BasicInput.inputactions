@@ -219,13 +219,22 @@
             ]
         },
         {
-            "name": "StartRestart",
+            "name": "Camera",
             "id": "77e18401-7c06-4679-91ea-c027e94b5503",
             "actions": [
                 {
                     "name": "PressEnter",
                     "type": "Button",
                     "id": "35fdfcce-593b-4673-94d1-bdde1398c92b",
+                    "expectedControlType": "",
+                    "processors": "",
+                    "interactions": "",
+                    "initialStateCheck": false
+                },
+                {
+                    "name": "PressEscape",
+                    "type": "Button",
+                    "id": "db2a660b-d890-45d0-b3ee-899d047b36e0",
                     "expectedControlType": "",
                     "processors": "",
                     "interactions": "",
@@ -241,6 +250,17 @@
                     "processors": "",
                     "groups": "",
                     "action": "PressEnter",
+                    "isComposite": false,
+                    "isPartOfComposite": false
+                },
+                {
+                    "name": "",
+                    "id": "e1c7d526-5408-4112-a16a-6e1d556a9f5d",
+                    "path": "<Keyboard>/escape",
+                    "interactions": "Press(behavior=1)",
+                    "processors": "",
+                    "groups": "",
+                    "action": "PressEscape",
                     "isComposite": false,
                     "isPartOfComposite": false
                 }
