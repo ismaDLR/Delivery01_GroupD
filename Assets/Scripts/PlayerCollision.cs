@@ -4,7 +4,10 @@ using UnityEngine;
 public class PlayerCollision : MonoBehaviour
 {
     public static Action<int> OnFloor;
+    public static Action OnGetCoin;
+
     private const int numberOfJumps = 2;
+
     // Start is called once before the first execution of Update after the MonoBehaviour is created
     void Start()
     {
@@ -30,7 +33,8 @@ public class PlayerCollision : MonoBehaviour
     {
         if (collision.gameObject.tag == "Coin")
         {
-            Debug.Log("moneda");
+            Debug.Log("hola");
+            OnGetCoin?.Invoke();
         }
     }
 }
