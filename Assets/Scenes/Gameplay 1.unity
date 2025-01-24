@@ -3040,7 +3040,7 @@ GameObject:
   - component: {fileID: 1740967021}
   - component: {fileID: 1740967020}
   - component: {fileID: 1740967019}
-  m_Layer: 0
+  m_Layer: 7
   m_Name: WallLeft
   m_TagString: Untagged
   m_Icon: {fileID: 0}

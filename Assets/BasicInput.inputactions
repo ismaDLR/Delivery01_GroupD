@@ -195,9 +195,9 @@
             "id": "859790c2-e08b-4e07-b02e-cf592191654f",
             "actions": [
                 {
-                    "name": "StartRestart",
+                    "name": "New action",
                     "type": "Button",
-                    "id": "3aab717e-ada1-46e7-8e55-d0b429b14d7b",
+                    "id": "781e8c87-f8a3-42e0-be9e-8c63d561418f",
                     "expectedControlType": "",
                     "processors": "",
                     "interactions": "",
@@ -207,12 +207,40 @@
             "bindings": [
                 {
                     "name": "",
-                    "id": "f465dfa5-bda3-4532-9fd2-c86815b15335",
+                    "id": "41d9fbdd-8586-42f6-b296-87121d6df0c6",
+                    "path": "",
+                    "interactions": "",
+                    "processors": "",
+                    "groups": "",
+                    "action": "New action",
+                    "isComposite": false,
+                    "isPartOfComposite": false
+                }
+            ]
+        },
+        {
+            "name": "StartRestart",
+            "id": "77e18401-7c06-4679-91ea-c027e94b5503",
+            "actions": [
+                {
+                    "name": "PressEnter",
+                    "type": "Button",
+                    "id": "35fdfcce-593b-4673-94d1-bdde1398c92b",
+                    "expectedControlType": "",
+                    "processors": "",
+                    "interactions": "",
+                    "initialStateCheck": false
+                }
+            ],
+            "bindings": [
+                {
+                    "name": "",
+                    "id": "c7121b61-32c2-4f73-8fbd-7af312afce68",
                     "path": "<Keyboard>/enter",
                     "interactions": "Press(behavior=1)",
                     "processors": "",
                     "groups": "",
-                    "action": "StartRestart",
+                    "action": "PressEnter",
                     "isComposite": false,
                     "isPartOfComposite": false
                 }

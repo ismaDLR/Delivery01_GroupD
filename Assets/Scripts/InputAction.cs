@@ -15,7 +15,7 @@ public class InputAction : MonoBehaviour
         
     }
 
-    private void OnStartRestart()
+    private void OnPressEnter()
     {
         SceneManager.LoadScene("Gameplay", LoadSceneMode.Single);
     }
