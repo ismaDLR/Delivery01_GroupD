@@ -9,6 +9,7 @@ public class PlayerJump : MonoBehaviour
 
     private Rigidbody2D rigidbody;
     private float jumpStartedTime;
+    private float numberOfJumps;
 
     // Start is called once before the first execution of Update after the MonoBehaviour is created
     void Start()
@@ -24,10 +25,14 @@ public class PlayerJump : MonoBehaviour
 
     public void OnJumpStarted()
     {
-        SetGravity();
-        var vel = new Vector2(rigidbody.linearVelocity.x, GetJumpForce());
-        rigidbody.linearVelocity = vel;
-        jumpStartedTime = Time.time;
+        if (numberOfJumps > 0)
+        {
+            SetGravity();
+            var vel = new Vector2(rigidbody.linearVelocity.x, GetJumpForce());
+            rigidbody.linearVelocity = vel;
+            jumpStartedTime = Time.time;
+            numberOfJumps--;
+        }
     }
 
     public void OnJumpFinished()
@@ -45,5 +50,14 @@ public class PlayerJump : MonoBehaviour
     private float GetJumpForce()
     {
         return 2 * JumpHeight * SpeedHorizontal / DistanceToMaxHeight;
+    }
+
+    private void OnCollisionEnter2D(Collision2D collision)
+    {
+        // Layer 8 == "Ground"
+        if (collision.gameObject.layer == 8)
+        {
+            numberOfJumps = 2;
+        }
     }
 }
