@@ -9,7 +9,6 @@ public class PlataformMove : MonoBehaviour
     private float maxPosition = 1f;
     [SerializeField]
     private float minPosition = -1f;
-
     private Rigidbody2D rigidbody;
     private float dir = 1; // Horizontal move direction value [-1, 1]
     void Start()

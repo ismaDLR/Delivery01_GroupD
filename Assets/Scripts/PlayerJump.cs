@@ -6,26 +6,30 @@ public class PlayerJump : MonoBehaviour
     public float SpeedHorizontal;
     public float DistanceToMaxHeight;
     public float PressTimeToMaxJump;
+    public Animator JumpAnimator;
 
     private Rigidbody2D rigidbody;
     private float jumpStartedTime;
-    private float numberOfJumps;
+    private int numberOfJumps;
+   
 
     // Start is called once before the first execution of Update after the MonoBehaviour is created
     void Start()
     {
         rigidbody = GetComponent<Rigidbody2D>();
         PlayerCollision.OnFloor += SetNumberOfJumps;
+        
     }
 
     // Update is called once per frame
     void Update()
     {
-        
+        JumpAnimator.SetInteger("numberOfJumps", numberOfJumps);
     }
 
     public void OnJumpStarted()
     {
+        
         if (numberOfJumps > 0)
         {
             SetGravity();
@@ -33,7 +37,10 @@ public class PlayerJump : MonoBehaviour
             rigidbody.linearVelocity = vel;
             jumpStartedTime = Time.time;
             numberOfJumps--;
+            
         }
+      
+
     }
 
     public void OnJumpFinished()
