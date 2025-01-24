@@ -15,6 +15,7 @@ public class PlayerJump : MonoBehaviour
     void Start()
     {
         rigidbody = GetComponent<Rigidbody2D>();
+        PlayerCollision.OnFloor += SetNumberOfJumps;
     }
 
     // Update is called once per frame
@@ -52,12 +53,8 @@ public class PlayerJump : MonoBehaviour
         return 2 * JumpHeight * SpeedHorizontal / DistanceToMaxHeight;
     }
 
-    private void OnCollisionEnter2D(Collision2D collision)
+    private void SetNumberOfJumps(int number)
     {
-        // Layer 8 == "Ground"
-        if (collision.gameObject.layer == 8)
-        {
-            numberOfJumps = 2;
-        }
+        numberOfJumps = number;
     }
 }

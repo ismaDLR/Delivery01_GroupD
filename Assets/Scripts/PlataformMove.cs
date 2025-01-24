@@ -21,14 +21,13 @@ public class PlataformMove : MonoBehaviour
     void Update()
     {
 
-        if (gameObject.transform.position.x > maxPosition)
+        if (gameObject.transform.position.x >= maxPosition)
         {
-            dir *= -1;
-            
+            dir = -1;   
         }
-        else if(gameObject.transform.position.x < minPosition)
+        else if(gameObject.transform.position.x <= minPosition)
         {
-            dir *= -1;
+            dir = 1;
         }
         
         Vector2 velocity = rigidbody.linearVelocity;
