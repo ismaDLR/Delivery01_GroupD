@@ -1,16 +1,17 @@
+using TMPro;
 using UnityEngine;
+using UnityEngine.UI;
 
-public class Coin : MonoBehaviour
+public class Point : MonoBehaviour
 {
 
     void Start()
     {
-        
-    }
 
+    }
 
     void Update()
     {
-        
+
     }
 }
