@@ -11,16 +11,15 @@ public class PlayerJump : MonoBehaviour
     private Rigidbody2D rigidbody;
     private float jumpStartedTime;
     private int numberOfJumps;
-  
-   
+    private SoundManager soundManager;
+
 
     // Start is called once before the first execution of Update after the MonoBehaviour is created
     void Start()
     {
         rigidbody = GetComponent<Rigidbody2D>();
         PlayerCollision.OnFloor += SetNumberOfJumps;
-      
-        
+        soundManager = FindAnyObjectByType<SoundManager>();
     }
 
     // Update is called once per frame
@@ -31,7 +30,7 @@ public class PlayerJump : MonoBehaviour
 
     public void OnJumpStarted()
     {
-        
+        soundManager.SeleccionAudio(2, 0.9f);
         if (numberOfJumps > 0)
         {
             SetGravity();

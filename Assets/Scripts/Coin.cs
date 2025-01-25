@@ -5,10 +5,11 @@ public class Coin : MonoBehaviour
 {
     public static Action<int> OnSetPointText;
     public int Points;
+    private SoundManager soundManager;
 
     void Start()
     {
-        
+        soundManager = FindAnyObjectByType<SoundManager>();
     }
 
 
@@ -21,6 +22,7 @@ public class Coin : MonoBehaviour
     {
         if (collision.gameObject.tag == "Player")
         {
+            soundManager.SeleccionAudio(0, 0.9f);
             OnSetPointText?.Invoke(Points);
             Destroy(gameObject);
         }
