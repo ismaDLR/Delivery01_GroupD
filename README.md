@@ -27,20 +27,14 @@ _TODO: Show your game to the world, animated GIFs recommended!._
 
  - Ismael de los Reyes - Level designer
  - Moises de Paco - Programer
- - Antonio Manzano - UI designer
+ - Antonio Manzano - UI and sound
  - Xavier Garcia - UI designer
-
-### Links
-
- - YouTube Gameplay: $(YouTube Link)
- - itch.io Release: $(itch.io Game Page)
- - Steam Release: $(Steam Game Page)
 
 ### License
 
 This game sources are licensed under MIT license. Check [LICENSE](LICENSE) for further details.
 
 Licenses of the sprites used
-- From Kenney https://www.kenney.nl/assets
-- https://laredgames.itch.io/coins-free
-*Copyright (c) $(Year) $(Developers Names)*
+- Character https://laredgames.itch.io/coins-free Year: 2-3-2021 Developers: https://laredgames.itch.io/
+- Scenari https://www.gameart2d.com/free-platformer-game-tileset.html Year and developer Unknow
+- Audio https://gamesounds.xyz/ Year: 31-07-2015 Developer: KenneyNL
