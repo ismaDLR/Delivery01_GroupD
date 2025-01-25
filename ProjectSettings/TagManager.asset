@@ -42,5 +42,26 @@ TagManager:
   - name: Default
     uniqueID: 0
     locked: 0
+  - name: Fondo
+    uniqueID: 1879196621
+    locked: 0
+  - name: FondoDecoracion
+    uniqueID: 3271876087
+    locked: 0
+  - name: Escenario
+    uniqueID: 3967891189
+    locked: 0
+  - name: Decoracion1
+    uniqueID: 522340399
+    locked: 0
+  - name: Decoracion
+    uniqueID: 3294235975
+    locked: 0
+  - name: Items
+    uniqueID: 18317355
+    locked: 0
+  - name: Player
+    uniqueID: 2139521091
+    locked: 0
   m_RenderingLayers:
   - Default
