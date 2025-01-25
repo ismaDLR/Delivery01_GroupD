@@ -8,9 +8,8 @@ This project is made by 4 students, and the goal is to develop a simple 2D platf
 
 ### Features
 
- - $(Game Feature 01)
- - $(Game Feature 02)
- - $(Game Feature 03)
+ - Double jump
+ - Power-up
 
 ### Controls
 
