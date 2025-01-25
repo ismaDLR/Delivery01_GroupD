@@ -4,10 +4,12 @@ using UnityEngine.SceneManagement;
 public class InputAction : MonoBehaviour
 {
     private Scene scene;
+    private SoundManager soundManager;
     // Start is called once before the first execution of Update after the MonoBehaviour is created
     void Start()
     {
         scene = SceneManager.GetActiveScene();
+        soundManager = FindAnyObjectByType<SoundManager>();
     }
 
     // Update is called once per frame
@@ -20,6 +22,7 @@ public class InputAction : MonoBehaviour
     {
         if (scene.name != "Gameplay")
         {
+            soundManager.SeleccionAudio(0, 0.9f);
             SceneManager.LoadScene("Gameplay", LoadSceneMode.Single);
         }
     }
