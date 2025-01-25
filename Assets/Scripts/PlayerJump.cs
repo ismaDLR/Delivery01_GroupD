@@ -11,6 +11,7 @@ public class PlayerJump : MonoBehaviour
     private Rigidbody2D rigidbody;
     private float jumpStartedTime;
     private int numberOfJumps;
+  
    
 
     // Start is called once before the first execution of Update after the MonoBehaviour is created
@@ -18,6 +19,7 @@ public class PlayerJump : MonoBehaviour
     {
         rigidbody = GetComponent<Rigidbody2D>();
         PlayerCollision.OnFloor += SetNumberOfJumps;
+      
         
     }
 
@@ -37,9 +39,9 @@ public class PlayerJump : MonoBehaviour
             rigidbody.linearVelocity = vel;
             jumpStartedTime = Time.time;
             numberOfJumps--;
-            
         }
-      
+        
+
 
     }
 
