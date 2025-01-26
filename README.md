@@ -21,6 +21,8 @@ This project is made by 4 students, and the goal is to develop a simple 2D platf
 ### Screenshots
 
 ![$(Carlos el explorador)](Screenshots/screenshot02.png "$(Carlos el explorador)")
+![$(Carlos el explorador)](Screenshots/screenshot03.png "$(Carlos el explorador)")
+![$(Carlos el explorador)](Screenshots/screenshot04.png "$(Carlos el explorador)")
 
 ### Developers
 
