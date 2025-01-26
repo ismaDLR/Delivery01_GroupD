@@ -1,5 +1,6 @@
 using System;
 using UnityEngine;
+using UnityEngine.SceneManagement;
 
 public class PlayerCollision : MonoBehaviour
 {
@@ -26,6 +27,14 @@ public class PlayerCollision : MonoBehaviour
         if (collision.gameObject.layer == 8)
         {
             OnFloor?.Invoke(numberOfJumps);
+        }
+    }
+
+    private void OnTriggerEnter2D(Collider2D collision)
+    {
+        if (collision.gameObject.tag == "OffTheMap")
+        {
+            SceneManager.LoadScene("Ending", LoadSceneMode.Single);
         }
     }
 }
