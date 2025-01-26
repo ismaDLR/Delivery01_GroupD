@@ -1,11 +1,11 @@
 using System;
+using TMPro;
 using UnityEngine;
 using UnityEngine.SceneManagement;
 
 public class PlayerCollision : MonoBehaviour
 {
     public static Action<int> OnFloor;
-    public static Action OnDie;
 
     private const int numberOfJumps = 2;
 
@@ -35,8 +35,6 @@ public class PlayerCollision : MonoBehaviour
         if (collision.gameObject.tag == "OffTheMap")
         {
             SceneManager.LoadScene("Ending", LoadSceneMode.Single);
-            Debug.Log("a");
-            OnDie?.Invoke();
         }
     }
 }
