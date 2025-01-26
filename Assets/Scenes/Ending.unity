@@ -798,9 +798,10 @@ GameObject:
   - component: {fileID: 630511288}
   - component: {fileID: 630511290}
   - component: {fileID: 630511289}
+  - component: {fileID: 630511291}
   m_Layer: 5
-  m_Name: puntos (1)
-  m_TagString: Untagged
+  m_Name: numero
+  m_TagString: TextCoin
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -924,6 +925,18 @@ CanvasRenderer:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 630511287}
   m_CullTransparentMesh: 1
+--- !u!114 &630511291
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 630511287}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: f6a8808d2df3e46488f9f94f65e03edb, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
 --- !u!1 &656511007
 GameObject:
   m_ObjectHideFlags: 0
@@ -1293,7 +1306,7 @@ MonoBehaviour:
   m_OnCullStateChanged:
     m_PersistentCalls:
       m_Calls: []
-  m_text: 'Puntos:'
+  m_text: 'SCORE:'
   m_isRightToLeft: 0
   m_fontAsset: {fileID: 11400000, guid: c50b8dc6022c18349961dc72325c3592, type: 2}
   m_sharedMaterial: {fileID: -9056235075807431369, guid: c50b8dc6022c18349961dc72325c3592,
@@ -3277,7 +3290,7 @@ AudioSource:
   m_audioClip: {fileID: 8300000, guid: c4d55d7c36ff26e458c90c3d1d0ef029, type: 3}
   m_Resource: {fileID: 8300000, guid: c4d55d7c36ff26e458c90c3d1d0ef029, type: 3}
   m_PlayOnAwake: 1
-  m_Volume: 1
+  m_Volume: 0.257
   m_Pitch: 1
   Loop: 1
   Mute: 0

@@ -19,7 +19,6 @@ public class PlataformMove : MonoBehaviour
 
     void Update()
     {
-
         if (gameObject.transform.position.x >= maxPosition)
         {
             dir = -1;   

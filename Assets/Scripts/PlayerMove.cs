@@ -17,7 +17,7 @@ public class PlayerMove : MonoBehaviour
     void FixedUpdate()
     {
         Vector2 velocity = rigidbody.linearVelocity;
-        Animator.SetFloat("movment", velocity.x*speed);
+        Animator.SetFloat("movment", velocity.x * speed);
         if(velocity.x < 0)
         {
             transform.localScale = new Vector3(-5, 5, 5);
