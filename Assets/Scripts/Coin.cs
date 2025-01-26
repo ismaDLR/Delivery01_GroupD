@@ -22,7 +22,7 @@ public class Coin : MonoBehaviour
     {
         if (collision.gameObject.tag == "Player")
         {
-            soundManager.SeleccionAudio(0, 0.1f);
+            soundManager.SeleccionAudio(0, 0.9f);
             OnSetPointText?.Invoke(Points);
             Destroy(gameObject);
         }

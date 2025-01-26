@@ -38,7 +38,7 @@ public class PlayerJump : MonoBehaviour
             rigidbody.linearVelocity = vel;
             jumpStartedTime = Time.time;
             numberOfJumps--;
-            soundManager.SeleccionAudio(2, 0.1f);
+            soundManager.SeleccionAudio(2, 0.9f);
         }
         
 
@@ -75,7 +75,7 @@ public class PlayerJump : MonoBehaviour
         var vel = new Vector2(rigidbody.linearVelocity.x, GetJumpForce());
         rigidbody.linearVelocity = vel;
         jumpStartedTime = Time.time;
-        soundManager.SeleccionAudio(2, 0.1f);
+        soundManager.SeleccionAudio(2, 0.9f);
         JumpHeight = newJumpHeight;
     }
 }
