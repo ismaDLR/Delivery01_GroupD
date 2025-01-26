@@ -6,12 +6,11 @@ public class PlayerCollision : MonoBehaviour
     public static Action<int> OnFloor;
 
     private const int numberOfJumps = 2;
-    private Rigidbody2D rigidbody;
 
     // Start is called once before the first execution of Update after the MonoBehaviour is created
     void Start()
     {
-        rigidbody = GetComponent<Rigidbody2D>();
+        
     }
 
     // Update is called once per frame
@@ -22,8 +21,13 @@ public class PlayerCollision : MonoBehaviour
 
     private void OnCollisionEnter2D(Collision2D collision)
     {
+        // Layer 7 == "Wall"
         // Layer 8 == "Ground"
-        if (collision.gameObject.layer == 8)
+        if (collision.gameObject.layer == 7)
+        {
+
+        }
+        else if (collision.gameObject.layer == 8)
         {
             OnFloor?.Invoke(numberOfJumps);
         }

@@ -19,7 +19,6 @@ public class PlayerJump : MonoBehaviour
     {
         rigidbody = GetComponent<Rigidbody2D>();
         PlayerCollision.OnFloor += SetNumberOfJumps;
-        JumpBoost.OnTakeBoost += GetJumpBoost;
         soundManager = FindAnyObjectByType<SoundManager>();
     }
 
@@ -31,6 +30,7 @@ public class PlayerJump : MonoBehaviour
 
     public void OnJumpStarted()
     {
+        soundManager.SeleccionAudio(2, 0.9f);
         if (numberOfJumps > 0)
         {
             SetGravity();
@@ -38,7 +38,6 @@ public class PlayerJump : MonoBehaviour
             rigidbody.linearVelocity = vel;
             jumpStartedTime = Time.time;
             numberOfJumps--;
-            soundManager.SeleccionAudio(2, 0.9f);
         }
         
 
@@ -65,17 +64,5 @@ public class PlayerJump : MonoBehaviour
     private void SetNumberOfJumps(int number)
     {
         numberOfJumps = number;
-    }
-
-    private void GetJumpBoost()
-    {
-        var newJumpHeight = JumpHeight;
-        JumpHeight += 2;
-        SetGravity();
-        var vel = new Vector2(rigidbody.linearVelocity.x, GetJumpForce());
-        rigidbody.linearVelocity = vel;
-        jumpStartedTime = Time.time;
-        soundManager.SeleccionAudio(2, 0.9f);
-        JumpHeight = newJumpHeight;
     }
 }
