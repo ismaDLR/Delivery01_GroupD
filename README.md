@@ -20,7 +20,7 @@ This project is made by 4 students, and the goal is to develop a simple 2D platf
 
 ### Screenshots
 
-_TODO: Show your game to the world, animated GIFs recommended!._
+![$(Carlos el explorador)](Screenshots/screenshot02.png "$(Carlos el explorador)")
 
 ### Developers
 
