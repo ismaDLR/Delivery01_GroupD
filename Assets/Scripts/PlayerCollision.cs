@@ -38,5 +38,10 @@ public class PlayerCollision : MonoBehaviour
             OnDie?.Invoke();
             SceneManager.LoadScene("Ending");
         }
+        if (collision.gameObject.tag == "Finish")
+        {
+            
+            SceneManager.LoadScene("Ending");
+        }
     }
 }
