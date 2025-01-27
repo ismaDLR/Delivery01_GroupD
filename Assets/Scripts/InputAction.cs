@@ -23,7 +23,8 @@ public class InputAction : MonoBehaviour
         if (scene.name != "Gameplay")
         {
             soundManager.SeleccionAudio(0, 0.9f);
-            SceneManager.LoadScene("Gameplay", LoadSceneMode.Single);
+            //SceneManager.LoadScene("Gameplay");
+            SceneManager.LoadScene("Gameplay");
         }
     }
 

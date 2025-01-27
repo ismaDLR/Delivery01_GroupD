@@ -14,12 +14,22 @@ public class PlayerJump : MonoBehaviour
     private SoundManager soundManager;
 
 
+    private void OnEnable()
+    {
+        PlayerCollision.OnFloor += SetNumberOfJumps;
+        JumpBoost.OnTakeBoost += GetJumpBoost;
+    }
+
+    private void OnDisable()
+    {
+        PlayerCollision.OnFloor -= SetNumberOfJumps;
+        JumpBoost.OnTakeBoost -= GetJumpBoost;
+    }
+
     // Start is called once before the first execution of Update after the MonoBehaviour is created
     void Start()
     {
         rigidbody = GetComponent<Rigidbody2D>();
-        PlayerCollision.OnFloor += SetNumberOfJumps;
-        JumpBoost.OnTakeBoost += GetJumpBoost;
         soundManager = FindAnyObjectByType<SoundManager>();
     }
 
