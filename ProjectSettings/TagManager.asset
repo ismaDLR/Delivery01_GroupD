@@ -7,6 +7,8 @@ TagManager:
   - Coin
   - OffTheMap
   - TextCoin
+  - End
+  - Win
   layers:
   - Default
   - TransparentFX

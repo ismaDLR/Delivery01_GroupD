@@ -31,11 +31,8 @@ public class PlayerMove : MonoBehaviour
         rigidbody.linearVelocity = velocity;
     }
 
-    // NOTE: InputSystem: "move" action becomes "OnMove" method
     void OnMove(InputValue value)
     {
-        // Read value from control, the type depends on what
-        // type of controls the action is bound to
         var inputVal = value.Get<Vector2>();
         horizontalDir = inputVal.x;
     }

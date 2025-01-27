@@ -1,9 +1,11 @@
+using UnityEditor;
 using UnityEngine;
 
 public class DataManager : MonoBehaviour
 {
     public static DataManager Instance;
-    public static int points;
+    public static int Points;
+    public static int Title;
 
     private void OnEnable()
     {
@@ -15,7 +17,6 @@ public class DataManager : MonoBehaviour
         PointText.OnSendPoints -= GetSendPoints;
     }
 
-    // Start is called once before the first execution of Update after the MonoBehaviour is created
     void Start()
     {
         if (Instance != null)
@@ -28,14 +29,9 @@ public class DataManager : MonoBehaviour
         DontDestroyOnLoad(gameObject);
     }
 
-    // Update is called once per frame
-    void Update()
+    private void GetSendPoints(int number, int title)
     {
-        
-    }
-
-    private void GetSendPoints(int number)
-    {
-        points = number;
+        Points = number;
+        Title = title;
     }
 }

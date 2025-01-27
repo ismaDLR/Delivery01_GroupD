@@ -1,7 +1,7 @@
 using UnityEngine;
 using UnityEngine.UIElements;
 
-public class PlataformMove : MonoBehaviour
+public class PlatformMove : MonoBehaviour
 {
     [SerializeField]
     private float speed = 2.5f;
@@ -15,7 +15,6 @@ public class PlataformMove : MonoBehaviour
     {
         rigidbody = GetComponent<Rigidbody2D>();
     }
-
 
     void Update()
     {

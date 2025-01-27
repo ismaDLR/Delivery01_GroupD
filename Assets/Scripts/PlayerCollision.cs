@@ -6,21 +6,10 @@ using UnityEngine.SceneManagement;
 public class PlayerCollision : MonoBehaviour
 {
     public static Action<int> OnFloor;
-    public static Action OnDie;
+    public static Action<int> OnDie;
+    public static Action<int> OnWin;
 
-    private const int numberOfJumps = 2;
-
-    // Start is called once before the first execution of Update after the MonoBehaviour is created
-    void Start()
-    {
-        
-    }
-
-    // Update is called once per frame
-    void Update()
-    {
-        
-    }
+    private const int numberOfJumps = 2;  
 
     private void OnCollisionEnter2D(Collision2D collision)
     {
@@ -35,12 +24,12 @@ public class PlayerCollision : MonoBehaviour
     {
         if (collision.gameObject.tag == "OffTheMap")
         {
-            OnDie?.Invoke();
+            OnDie?.Invoke(1);
             SceneManager.LoadScene("Ending");
         }
-        if (collision.gameObject.tag == "Finish")
+        else if (collision.gameObject.tag == "Finish")
         {
-            
+            OnWin?.Invoke(2);
             SceneManager.LoadScene("Ending");
         }
     }

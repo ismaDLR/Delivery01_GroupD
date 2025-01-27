@@ -26,14 +26,14 @@ public class PlayerJump : MonoBehaviour
         JumpBoost.OnTakeBoost -= GetJumpBoost;
     }
 
-    // Start is called once before the first execution of Update after the MonoBehaviour is created
+
     void Start()
     {
         rigidbody = GetComponent<Rigidbody2D>();
         soundManager = FindAnyObjectByType<SoundManager>();
     }
 
-    // Update is called once per frame
+
     void Update()
     {
         JumpAnimator.SetInteger("numberOfJumps", numberOfJumps);
